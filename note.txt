@@ -1,0 +1,4 @@
+run mongodb based on replicate
+
+1:  stop mongo service
+2: mongod --port 27017 --dbpath C:\data\rs1 --replSet m101 --bind_ip localhost
