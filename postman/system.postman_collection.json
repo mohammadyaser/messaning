@@ -1,0 +1,106 @@
+{
+	"id": "c69daa99-c74c-444e-b2f6-d1554ed813a1",
+	"name": "system",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"5c479953-dec7-4f17-862b-ad176a82bdf7",
+		"805898f1-f48b-4cbe-9f10-d0c629545b5f",
+		"999ce192-fe53-4e33-a31b-6726420c013d",
+		"54c4d853-2ef4-48c0-a502-12b3000154f4"
+	],
+	"folders_order": [],
+	"protocolProfileBehavior": {},
+	"folders": [],
+	"requests": [
+		{
+			"id": "54c4d853-2ef4-48c0-a502-12b3000154f4",
+			"name": "send message",
+			"url": "127.0.0.1:6060/api/message/5ffb8889905c523b70ec2977/to/5ffb8beb23286f4934f2a015",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\r\n    \"text\" : \"from student to a teacher from/studentId/to/teacherId\"\r\n}",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "5c479953-dec7-4f17-862b-ad176a82bdf7",
+			"name": "get",
+			"url": "",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "805898f1-f48b-4cbe-9f10-d0c629545b5f",
+			"name": "create student",
+			"url": "127.0.0.1:6060/api/student",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\r\n    \"name\": \"st1\",\r\n    \"surname\": \"lastname1\",\r\n    \"email\": \"email1@test.com\",\r\n    \"password\": \"123\"\r\n}",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "999ce192-fe53-4e33-a31b-6726420c013d",
+			"name": "create teacher",
+			"url": "127.0.0.1:6060/api/teacher",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\r\n    \"name\" : \"t1\"\r\n}",
+			"headers": "",
+			"pathVariables": {}
+		}
+	]
+}
